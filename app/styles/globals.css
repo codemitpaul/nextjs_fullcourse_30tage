@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-slate-900 text-gray-200 font-light
+    }
+    h1 {
+        @apply text-3xl md:text-5xl font-semibold
+    }
+    p {
+        @apply text-sm md:text-lg font-extralight
+    }
+}
+
+@layer components {
+    .bg-g {
+        @apply bg-gradient-to-r from-violet-500 to-primary
+      }
+}
