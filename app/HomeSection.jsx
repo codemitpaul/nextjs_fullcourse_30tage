@@ -69,10 +69,17 @@ const HomeSection = () => {
           ))}
         </div>
       </div>
-      <div className="col-span-1 row-span-1 h-full relative w-full border-l border-b  border-t text-center space-y-2 border-yellow-500 flex items-center justify-between flex-col">
-        <h1 className="absolute  rotate-90 -right-20 opacity-30 top-1/2">
+      <div className="col-span-1 row-span-1 h-full relative w-full border-l border-b  border-t text-center space-y-2 border-yellow-500 flex items-center justify-center p-5 flex-col">
+        <h1 className="absolute hidden md:flex  rotate-90 -right-20 opacity-30 top-1/2">
           Fähigkeiten
         </h1>
+        <div className="md:hidden flex flex-col space-y-3 z-20">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            porro dolore veritatis repellendus repudiandae saepe iusto, expedita
+            quidem quod libero?
+          </p>
+        </div>
         <Circle />
       </div>
       <div className="col-span-1 py-10 p-5 row-span-1 h-full relative w-full border text-center space-y-2 border-green-500 flex items-center justify-between flex-col">

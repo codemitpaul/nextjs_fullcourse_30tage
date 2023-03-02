@@ -3,7 +3,7 @@ import React from "react";
 
 const Circle = () => {
   return (
-    <div className="flex     relative h-full w-full">
+    <div className="hidden md:flex relative h-full w-full">
       <div className=" absolute  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border mx-auto rounded-full border-blue-500">
         <Image
           alt=""
