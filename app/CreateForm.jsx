@@ -1,10 +1,13 @@
 "use client";
+import { postState } from "@/atoms/postAtom";
 import { useState } from "react";
+import { useRecoilState } from "recoil";
 
 function CreateForm() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [error, setError] = useState("");
+  const [posts, setPosts] = useRecoilState(postState);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +23,8 @@ function CreateForm() {
       if (!response.ok) {
         throw new Error("HTTP status " + response.status);
       }
+      const data = await response.json();
+      setPosts((prevData) => [...prevData, data]);
       setName("");
       setDescription("");
       setError("");
