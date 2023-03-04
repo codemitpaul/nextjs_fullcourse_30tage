@@ -1,6 +1,8 @@
 import axios from "axios";
 import Link from "next/link";
 
+export const revalidate = 100;
+
 const HomePage = async () => {
   const { data } = await axios.get("https://fakestoreapi.com/products");
   return (
